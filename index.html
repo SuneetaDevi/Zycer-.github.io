@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+</head>
+<body>
+   <!-- <div style="background-color: black; height: 300px;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 470px; width: 900px; height: 30%; ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li class="nav-item active" style="margin-left: 300px;">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>-->
+   
+        <!-- <div style="background-color: rgb(44, 44, 44); height: 80px; ">
+      <p style="margin-left: 785px; font-size: 20px; margin-top: 17px; position: absolute; color: rgb(255, 255, 255); font-size: 17px;"><a>Home</a></p>
+       <p style="margin-left: 955px; font-size: 20px; margin-top: 17px;position: absolute; color: rgb(255, 255, 255); font-size: 17px;"><a>Product</a></p>
+      
+       <p style="margin-left: 1135px; font-size: 20px; margin-top: 17px; position: absolute; color: rgb(255, 255, 255);font-size: 17px; "><a>Contact Us</a></p>
+       </div> -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 100px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"  style="margin-left: 400px; font-size: 18px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Product-detail" style="margin-left: 100px; font-size: 18px;">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" style="margin-left: 100px; font-size: 18px;">Contact</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+    <img src="The Zycer.png" style="margin-left: 50px;  position: absolute; width: 120px; border-radius: 50%; top: 0px;">
+    <section id="hero" class="d-flex align-items-center">
+      
+    </section><!-- End Hero -->
+    <!--<button style="margin-left: 455px; margin-top: -200px; position: absolute; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);  width: 200px;height: 50px;">Default Button</button>-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+ <script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
+ </script>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <section>
+
+      <div class="swiper-container slideshow">
+    
+        <div class="swiper-wrapper" style="margin-top: 10px;">
+    
+          <div class="swiper-slide slide">
+            <div class="slide-image" style="background-image: url('PocketKnife 13.jpg')"></div>
+            <span class="slide-title">Fino Edge Retractable Diamond Sharpening Rod</span>
+            <button style="margin-left: 10px; margin-top: 270px; position: absolute; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);  width: 200px;height: 50px; border-radius: 17px; border-color: rgb(255, 255, 255); font-size: 17px;">Buy Now</button>
+          </div>
+    
+          <div class="swiper-slide slide">
+            <div class="slide-image" style="background-image: url('PocketKnife 5.jpg')"></div>
+            <span class="slide-title">Fino Edge Retractable Diamond Sharpening Rod</span>
+            <button style="margin-left: 10px; margin-top: 270px; position: absolute; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);  width: 200px;height: 50px; border-radius: 17px; border-color: rgb(255, 255, 255); font-size: 17px;">Buy Now</button>
+          </div>
+    
+          
+    
+          <!--         <div class="swiper-slide slide">
+              <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+              </div>
+              </div>
+              <span class="slide-title">Exotic places</span>
+            </div>
+          
+            <div class="swiper-slide slide">
+              <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
+              </div>
+              <span class="slide-title">Meet ocean</span>
+            </div>
+          
+            <div class="swiper-slide slide">
+              <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
+              </div>
+              <span class="slide-title">Around the world</span>
+            </div> -->
+    
+        </div>
+    
+        <div class="slideshow-pagination"></div>
+    
+        <div class="slideshow-navigation">
+          <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
+          <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
+        </div>
+    
+      </div>
+    
+    </section>
+
+    
+ 
+<section id="about" class="about">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+        <a></a>
+      </div>
+
+      <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+        <h3>ZYCER Pocket Folding Knife - 3.3" Stainless Steel with a Liner-lock, Pocket Clip, Glass Breaker- Pocket Knife for Camping, Hunting and Fishing</h3>
+        <p>Currently unavailable.</p>
+        <p>We don't know when or if this item will be back in stock.</p>
+
+        <table  width = "100%" >
+         
+          <tr>
+             <td>
+                <table  width = "100%">
+                   <tr>
+                      <th>Brand</th>
+                      <th>Zycer</th>
+                   </tr>
+                   <tr>
+                      <td>Item Dimensions LxWxH</td>
+                      <td>7.87 x 1.57 x 1.18 inches</td>
+                   </tr>
+                   <tr>
+                      <td>Handle Material</td>
+                      <td>Aluminum</td>
+                   </tr>
+                   <tr>
+                    <td>Blade Shape</td>
+                    <td>Clip Point</td>
+                 </tr>
+                 <tr>
+                  <td>Blade Edge</td>
+                  <td>Convex</td>
+               </tr>
+               <tr>
+                <td>Blade Length</td>
+                <td>10 Centimeters
+                </td>
+             </tr>
+                </table>
+             </td>
+          </tr>
+          
+       </table>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+
+<!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Customer Reviews</h2>
+      <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/doctors/girl-1.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <p>A very good selection of picture hanging fixings. For the price, the pack is good value. D rings. </p>
+            <img src="5Star.png" style="top: 0px;">
+            <!-- <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/doctors/boy1.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+     
+            <p>Great selection of items for hanging your pictures etc. Speedy delivery and excellent service.</p>
+            <img src="5Star.png" style="margin-top: 0px;">
+            <!-- <div class="social">
+              <img src="5Star.png" style="margin-top: 10px;">
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section><!-- End Doctors Section -->
+
+
+<section id="appointment" class="appointment section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <div class="form-row">
+        <div class="col-md-4 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 form-group">
+          
+        </div>
+        <div class="col-md-4 form-group">
+         
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group">
+          
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+        <div class="validate"></div>
+      </div>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Submit</button></div>
+    </form>
+
+  </div>
+</section><!-- End Appointment Section -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container" style="background-color: black;">
+      <div class="row">
+        <div style=" height: 240px; margin-left: 1px; margin-top: 60px; ">
+          <p style="color: white; font-size: 25px; position: absolute; color: black; width: 990px; color: white; ">ZYCER Pocket Folding Knife - 3.3" Stainless Steel with a Liner-lock, Pocket Clip, Glass Breaker- Pocket Knife for Camping, Hunting and Fishing</p>
+          <a href="https://www.amazon.com/dp/B08RX9VFCY?ref=myi_title_dp"><button style="border: white; margin-top: 141px; color: rgb(255, 255, 255); background-color: rgb(173, 104, 0);  width: 200px; border-radius: 15px; height: 60px; ">GO TO AMAZON</button></a>
+         <!--<button  style="border: white; margin-left: 540px; margin-top: 30px; position: absolute; color: rgb(0, 0, 0); background-color: rgb(173, 104, 0);  width: 200px; border-radius: 12px; height: 70px;" >Default Button</button>
+        --> </div>
+        
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+
+<script>
+  // The Slideshow class.
+class Slideshow {
+  constructor(el) {
+      
+      this.DOM = {el: el};
+    
+      this.config = {
+        slideshow: {
+          delay: 3000,
+          pagination: {
+            duration: 3,
+          }
+        }
+      };
+      
+      // Set the slideshow
+      this.init();
+    
+  }
+  init() {
+    
+    var self = this;
+    
+    // Charmed title
+    this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
+    this.DOM.slideTitle.forEach((slideTitle) => {
+      charming(slideTitle);
+    });
+    
+    // Set the slider
+    this.slideshow = new Swiper (this.DOM.el, {
+        
+        loop: true,
+        autoplay: {
+          delay: this.config.slideshow.delay,
+          disableOnInteraction: false,
+        },
+        speed: 500,
+        preloadImages: true,
+        updateOnImagesReady: true,
+        
+        // lazy: true,
+        // preloadImages: false,
+
+        pagination: {
+          el: '.slideshow-pagination',
+          clickable: true,
+          bulletClass: 'slideshow-pagination-item',
+          bulletActiveClass: 'active',
+          clickableClass: 'slideshow-pagination-clickable',
+          modifierClass: 'slideshow-pagination-',
+          renderBullet: function (index, className) {
+            
+            var slideIndex = index,
+                number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
+            
+            var paginationItem = '<span class="slideshow-pagination-item">';
+            paginationItem += '<span class="pagination-number">' + number + '</span>';
+            paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
+            paginationItem += '</span>';
+          
+            return paginationItem;
+            
+          },
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.slideshow-navigation-button.next',
+          prevEl: '.slideshow-navigation-button.prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      
+        on: {
+          init: function() {
+            self.animate('next');
+          },
+        }
+      
+      });
+    
+      // Init/Bind events.
+      this.initEvents();
+      
+  }
+  initEvents() {
+      
+      this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
+      //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
+
+      this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
+      
+      this.slideshow.on('slidePrevTransitionStart', () => this.animate('prev'));
+          
+  }
+  animate(direction = 'next') {
+    
+      // Get the active slide
+      this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
+      this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
+      this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
+      this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
+    
+      // Reverse if prev  
+      this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
+    
+      // Get old slide
+      this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
+      if (this.DOM.oldSlide) {
+        // Get parts
+        this.DOM.oldSlideTitle = this.DOM.oldSlide.querySelector('.slide-title'),
+        this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span'); 
+        // Animate
+        this.DOM.oldSlideTitleLetters.forEach((letter,pos) => {
+          TweenMax.to(letter, .3, {
+            ease: Quart.easeIn,
+            delay: (this.DOM.oldSlideTitleLetters.length-pos-1)*.04,
+            y: '50%',
+            opacity: 0
+          });
+        });
+      }
+    
+      // Animate title
+      this.DOM.activeSlideTitleLetters.forEach((letter,pos) => {
+        TweenMax.to(letter, .6, {
+          ease: Back.easeOut,
+          delay: pos*.05,
+          startAt: {y: '50%', opacity: 0},
+          y: '0%',
+          opacity: 1
+        });
+      });
+    
+      // Animate background
+      TweenMax.to(this.DOM.activeSlideImg, 7.5, {
+          ease: Expo.easeOut,
+          startAt: {x: direction === 'next' ? 200 : -200},
+          x: 0,
+      });
+    
+      //this.animatePagination()
+  
+  }
+  animatePagination(swiper, paginationEl) {
+          
+    // Animate pagination
+    this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
+    this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
+    this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
+    
+    console.log(swiper.pagination);
+    // console.log(swiper.activeIndex);
+    
+    // Reset and animate
+      TweenMax.set(this.DOM.paginationItemsLoader, {scaleX: 0});
+      TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
+        startAt: {scaleX: 0},
+        scaleX: 1,
+      });
+    
+    
+  }
+  
+}
+
+const slideshow = new Slideshow(document.querySelector('.slideshow'));
+
+</script>
+</body>
+</html>
